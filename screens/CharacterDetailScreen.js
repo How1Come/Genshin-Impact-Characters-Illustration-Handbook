@@ -1,8 +1,8 @@
 import React from 'react';
 import { View, Text, Image } from 'react-native';
-import Character1Image from '../images/character1.png';
-import Character2Image from '../images/character2.png';
-import Character3Image from '../images/character3.png';
+import Character1Image from '../images/character1.jpg';
+import Character2Image from '../images/character2.jpg';
+import Character3Image from '../images/character3.jpg';
 
 const CharacterDetailScreen = ({ route }) => {
   const { character } = route.params;
@@ -23,17 +23,18 @@ const CharacterDetailScreen = ({ route }) => {
 };
 
 function getImageForCharacter(character) {
-  switch (character.id) {
-    case 1:
+  switch (character.name) {
+    case "Traveler":
       return Character1Image;
-    case 2:
+    case "Venti":
       return Character2Image;
-    case 3:
+    case "Diluc":
       return Character3Image;
     // add other cases for other characters as needed
     default:
       return null;
   }
 }
+
 
 export default CharacterDetailScreen;
