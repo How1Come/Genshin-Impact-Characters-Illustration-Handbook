@@ -7,9 +7,9 @@ import { createStackNavigator } from '@react-navigation/stack';
 import characterData from './data/characters.json';
 import CharacterDetailScreen from './screens/CharacterDetailScreen.js';
 
-import Character1Image from './images/character1.png';
-import Character2Image from './images/character2.png';
-import Character3Image from './images/character3.png';
+import Character1Image from './images/character1.jpg';
+import Character2Image from './images/character2.jpg';
+import Character3Image from './images/character3.jpg';
 // import other character images as needed
 
 function CharacterListScreen() {
@@ -39,12 +39,12 @@ function CharacterListScreen() {
 }
 
 function getImageForCharacter(character) {
-  switch (character.id) {
-    case 1:
+  switch (character.name) {
+    case "Traveler":
       return Character1Image;
-    case 2:
+    case "Venti":
       return Character2Image;
-    case 3:
+    case "Diluc":
       return Character3Image;
     // add other cases for other characters as needed
     default:
