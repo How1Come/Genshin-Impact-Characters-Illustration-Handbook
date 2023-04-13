@@ -7,9 +7,9 @@ import { createStackNavigator } from '@react-navigation/stack';
 import characterData from './data/characters.json';
 import CharacterDetailScreen from './screens/CharacterDetailScreen.js';
 
-import Character1Image from './images/character1.jpg';
-import Character2Image from './images/character2.jpg';
-import Character3Image from './images/character3.jpg';
+import Character1Image from './images/Traveler.jpg';
+import Character2Image from './images/Venti.jpg';
+import Character3Image from './images/Diluc.jpg';
 // import other character images as needed
 
 function CharacterListScreen() {
