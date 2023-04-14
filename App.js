@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, FlatList, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import { View, Text, FlatList, StyleSheet, Image, TouchableOpacity, ImageBackground } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -7,9 +7,9 @@ import { createStackNavigator } from '@react-navigation/stack';
 import characterData from './data/characters.json';
 import CharacterDetailScreen from './screens/CharacterDetailScreen.js';
 
-import Character1Image from './images/Traveler.jpg';
-import Character2Image from './images/Venti.jpg';
-import Character3Image from './images/Diluc.jpg';
+import TravelerImage from './images/Traveler.jpg';
+import VentiImage from './images/Venti.jpg';
+import DilucImage from './images/Diluc.jpg';
 // import other character images as needed
 
 function CharacterListScreen() {
@@ -41,11 +41,11 @@ function CharacterListScreen() {
 function getImageForCharacter(character) {
   switch (character.name) {
     case "Traveler":
-      return Character1Image;
+      return TravelerImage;
     case "Venti":
-      return Character2Image;
+      return VentiImage;
     case "Diluc":
-      return Character3Image;
+      return DilucImage;
     // add other cases for other characters as needed
     default:
       return null;
