@@ -18,6 +18,7 @@ const CharacterDetailScreen = ({ route }) => {
       <Text>Weapon: {character.weapon}</Text>
       <Text>Constellation: {character.constellation}</Text>
       <Text>Title: {character.title}</Text>
+      <Text>Region: {character.region}</Text>
     </View>
   );
 };
