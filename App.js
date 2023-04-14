@@ -1,11 +1,12 @@
-import React from 'react';
-import { View, Text, FlatList, StyleSheet, Image, TouchableOpacity, ImageBackground } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { View, Text, FlatList, StyleSheet, Image, TouchableOpacity, Keyboard } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import characterData from './data/characters.json';
 import CharacterDetailScreen from './screens/CharacterDetailScreen.js';
+import SearchBar from './components/SearchBar.js';
 
 import TravelerImage from './images/Traveler.jpg';
 import VentiImage from './images/Venti.jpg';
@@ -14,6 +15,16 @@ import DilucImage from './images/Diluc.jpg';
 
 function CharacterListScreen() {
   const navigation = useNavigation();
+  const [search, setSearch] = useState('');
+  const [filteredCharacterData, setFilteredCharacterData] = useState([]);
+
+  useEffect(() => {
+    setFilteredCharacterData(
+      characterData.filter((character) =>
+        character.name.toLowerCase().includes(search.toLowerCase())
+      )
+    );
+  }, [search]);
 
   const handleCharacterPress = (character) => {
     navigation.navigate('CharacterDetail', { character });
@@ -21,8 +32,9 @@ function CharacterListScreen() {
 
   return (
     <View>
+      <SearchBar value={search} onChangeText={setSearch} />
       <FlatList
-        data={characterData}
+        data={filteredCharacterData}
         keyExtractor={(character) => character.name}
         renderItem={({ item }) => (
           <TouchableOpacity
@@ -40,11 +52,11 @@ function CharacterListScreen() {
 
 function getImageForCharacter(character) {
   switch (character.name) {
-    case "Traveler":
+    case 'Traveler':
       return TravelerImage;
-    case "Venti":
+    case 'Venti':
       return VentiImage;
-    case "Diluc":
+    case 'Diluc':
       return DilucImage;
     // add other cases for other characters as needed
     default:
