@@ -8,10 +8,14 @@ import DilucImage from '../images/Diluc.jpg';
 import NoneBackgroundImage from '../images/none_background.jpg';
 import MondstadtBackgroundImage from '../images/Mondstadt_background.jpg';
 
+import AnemoImage from '../images/Anemo.jpg';
+import PyroImage from '../images/Pyro.jpg';
+
 const CharacterDetailScreen = ({ route }) => {
   const { character } = route.params;
   const image = getImageForCharacter(character);
   const backgroundImage = getBackgroundImageForRegion(character.region);
+  const elementImage = getElementImageForElement(character.element);
 
   return (
     <View style={styles.container}>
@@ -26,6 +30,8 @@ const CharacterDetailScreen = ({ route }) => {
         <Text>Constellation: {character.constellation}</Text>
         <Text>Title: {character.title}</Text>
         <Text>Region: {character.region}</Text>
+        <Text>Element: {character.element}</Text>
+        <Image source={elementImage} style={styles.elementImage} />
       </View>
     </View>
   );
@@ -57,6 +63,18 @@ function getBackgroundImageForRegion(region) {
   }
 }
 
+function getElementImageForElement(element) {
+  switch (element) {
+    case 'Anemo':
+      return AnemoImage;
+    case 'Pyro':
+      return PyroImage;
+    // add other cases for other elements as needed
+    default:
+      return null;
+  }
+}
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -71,7 +89,7 @@ const styles = StyleSheet.create({
     right: 0,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: 'rgba(255, 255, 255, 0.8)',
+    backgroundColor: 'rgba(255, 255, 255, 0.65)',
     borderRadius: 20,
     margin: 20,
   },
@@ -82,7 +100,7 @@ const styles = StyleSheet.create({
     marginTop: 40,
   },
   characterName: {
-    fontSize: 24,
+    fontSize: 25,
     fontWeight: 'bold',
     marginVertical: 20,
   },
@@ -91,6 +109,11 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
   },
+  elementImage: {
+    width: 150,
+    height: 150,
+    borderRadius: 75,
+}
 });
 
 export default CharacterDetailScreen;
