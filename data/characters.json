@@ -7,7 +7,8 @@
       "weapon": "Sword",
       "constellation": "Viator",
       "title": "The Outlander",
-      "region": "None"
+      "region": "None",
+      "element": "None"
     },
     {
       "name": "Venti",
@@ -17,7 +18,8 @@
       "weapon": "Bow",
       "constellation": "Carmen Dei",
       "title": "Windborne Bard",
-      "region": "Mondstadt"
+      "region": "Mondstadt",
+      "element": "Anemo"
     },
     {
       "name": "Diluc",
@@ -27,7 +29,8 @@
       "weapon": "Claymore",
       "constellation": "Noctua",
       "title": "Darknight Hero",
-      "region": "Mondstadt"
+      "region": "Mondstadt",
+      "element": "Pyro"
     }
   ]
   
