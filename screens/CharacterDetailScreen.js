@@ -11,10 +11,13 @@ import MondstadtBackgroundImage from '../images/Mondstadt_background.jpg';
 import AnemoImage from '../images/Anemo.jpg';
 import PyroImage from '../images/Pyro.jpg';
 
+import FiveStarImage from '../images/5_stars.png';
+
 const CharacterDetailScreen = ({ route }) => {
   const { character } = route.params;
   const image = getImageForCharacter(character);
   const backgroundImage = getBackgroundImageForRegion(character.region);
+  const FiveStarImage = getFiveStarImageForCharacter(character.star);
   const elementImage = getElementImageForElement(character.element);
 
   return (
@@ -23,6 +26,7 @@ const CharacterDetailScreen = ({ route }) => {
       <View style={styles.contentContainer}>
         <Image source={image} style={styles.characterImage} />
         <Text style={styles.characterName}>{character.name}</Text>
+        <Image source={FiveStarImage} style={styles.FiveStarImage} />
         <Text>Birthday: {character.birthday}</Text>
         <Text>Affiliation: {character.affiliation}</Text>
         <Text>Role: {character.role}</Text>
@@ -75,6 +79,16 @@ function getElementImageForElement(element) {
   }
 }
 
+function getFiveStarImageForCharacter(star) {
+  switch (star) {
+    case '5':
+      return FiveStarImage;
+    // add other cases for other stars as needed
+    default:
+      return null;
+  }
+}
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -102,7 +116,12 @@ const styles = StyleSheet.create({
   characterName: {
     fontSize: 25,
     fontWeight: 'bold',
-    marginVertical: 20,
+    marginTop: 10,
+  },
+  FiveStarImage: {
+    width: 144,
+    height: 28,
+    marginVertical:10,
   },
   backgroundImage: {
     position: 'absolute',
