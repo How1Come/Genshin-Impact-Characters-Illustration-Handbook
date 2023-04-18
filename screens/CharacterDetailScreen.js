@@ -17,7 +17,7 @@ const CharacterDetailScreen = ({ route }) => {
   const { character } = route.params;
   const image = getImageForCharacter(character);
   const backgroundImage = getBackgroundImageForRegion(character.region);
-  const FiveStarImage = getFiveStarImageForCharacter(character.star);
+  const StarImage = getStarImageForCharacter(character.star);
   const elementImage = getElementImageForElement(character.element);
 
   return (
@@ -26,15 +26,16 @@ const CharacterDetailScreen = ({ route }) => {
       <View style={styles.contentContainer}>
         <Image source={image} style={styles.characterImage} />
         <Text style={styles.characterName}>{character.name}</Text>
-        <Image source={FiveStarImage} style={styles.FiveStarImage} />
-        <Text>Birthday: {character.birthday}</Text>
-        <Text>Affiliation: {character.affiliation}</Text>
-        <Text>Role: {character.role}</Text>
-        <Text>Weapon: {character.weapon}</Text>
-        <Text>Constellation: {character.constellation}</Text>
-        <Text>Title: {character.title}</Text>
-        <Text>Region: {character.region}</Text>
-        <Text>Element: {character.element}</Text>
+        <Image source={StarImage} style={styles.StarImage} />
+        <View style={ {marginVertical: 5, justifyContent: 'center', fontSize: 100} }>
+          <Text>Birthday: {character.birthday}</Text>
+          <Text>Affiliation: {character.affiliation}</Text>
+          <Text>Weapon: {character.weapon}</Text>
+          <Text>Constellation: {character.constellation}</Text>
+          <Text>Title: {character.title}</Text>
+          <Text>Region: {character.region}</Text>
+          <Text>Element: {character.element}</Text>
+        </View>
         <Image source={elementImage} style={styles.elementImage} />
       </View>
     </View>
@@ -79,7 +80,7 @@ function getElementImageForElement(element) {
   }
 }
 
-function getFiveStarImageForCharacter(star) {
+function getStarImageForCharacter(star) {
   switch (star) {
     case '5':
       return FiveStarImage;
@@ -118,10 +119,10 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginTop: 10,
   },
-  FiveStarImage: {
+  StarImage: {
     width: 144,
     height: 28,
-    marginVertical:10,
+    marginVertical: 10,
   },
   backgroundImage: {
     position: 'absolute',
@@ -132,6 +133,7 @@ const styles = StyleSheet.create({
     width: 150,
     height: 150,
     borderRadius: 75,
+    marginVertical: 10,
 }
 });
 

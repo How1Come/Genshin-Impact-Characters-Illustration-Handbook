@@ -4,10 +4,9 @@
       "star": "5",
       "birthday": "Unknown",
       "affiliation": "None",
-      "role": "Traveler",
       "weapon": "Sword",
-      "constellation": "Viator",
-      "title": "The Outlander",
+      "constellation": "Viator (Male)/Viatrix (Female)",
+      "title": "Outlander",
       "region": "None",
       "element": "None"
     },
@@ -16,7 +15,6 @@
       "star": "5",
       "birthday": "June 16",
       "affiliation": "Mondstadt",
-      "role": "Bard",
       "weapon": "Bow",
       "constellation": "Carmen Dei",
       "title": "Windborne Bard",
@@ -28,12 +26,20 @@
       "star": "5",
       "birthday": "April 30",
       "affiliation": "Dawn Winery",
-      "role": "Diligence",
       "weapon": "Claymore",
       "constellation": "Noctua",
       "title": "Darknight Hero",
       "region": "Mondstadt",
       "element": "Pyro"
+    },
+    {
+      "name": "Albedo",
+      "star": "5",
+      "birthday": "September 13",
+      "affiliation": "Knights of Favonius",
+      "weapon": "Sword",
+      "constellation": "Princeps Cretaceus",
+      "title": "The Alchemist"
     }
   ]
   
