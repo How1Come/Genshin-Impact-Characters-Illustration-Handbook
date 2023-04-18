@@ -84,6 +84,7 @@ const styles = StyleSheet.create({
   characterName: {
     fontSize: 18,
     fontWeight: 'bold',
+    marginRight: 16,
   },
 });
 

@@ -43,6 +43,61 @@
       "title": "The Alchemist",
       "region": "Mondstadt",
       "element": "Geo"
+    },
+    {
+      "name": "Jean",
+      "star": "5",
+      "birthday": "March 14",
+      "affiliation": "Knights of Favonius",
+      "weapon": "Sword",
+      "constellation": "Leo Minor",
+      "title": "Acting Grand Master",
+      "region": "Mondstadt",
+      "element": "Anemo"
+    },
+    {
+      "name": "Mona",
+      "star": "5",
+      "birthday": "August 31",
+      "affiliation": "Astrologists",
+      "weapon": "Catalyst",
+      "constellation": "Astrolabe",
+      "title": "Enigmatic Astrologer",
+      "region": "Mondstadt",
+      "element": "Hydro"
+    },
+    {
+      "name": "Sucrose",
+      "star": "4",
+      "birthday": "November 26",
+      "affiliation": "Alchemy",
+      "weapon": "Catalyst",
+      "constellation": "Ampulla",
+      "title": "Harmless Sweetie",
+      "region": "Mondstadt",
+      "element": "Anemo"
+    },
+    {
+      "name": "Fischl",
+      "star": "4",
+      "birthday": "May 27",
+      "affiliation": "Prinzessin der Verurteilung!",
+      "weapon": "Bow",
+      "constellation": "Corvus",
+      "title": "Prinzessin der Verurteilung!",
+      "region": "Mondstadt",
+      "element": "Electro"
+    },
+    {
+      "name": "Barbara",
+      "star": "4",
+      "birthday": "July 5",
+      "affiliation": "Church of Favonius",
+      "weapon": "Catalyst",
+      "constellation": "Crater",
+      "title": "Shining Idol",
+      "region": "Mondstadt",
+      "element": "Hydro"
     }
   ]
   
