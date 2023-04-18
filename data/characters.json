@@ -1,6 +1,7 @@
 [
     {
       "name": "Traveler",
+      "star": "5",
       "birthday": "Unknown",
       "affiliation": "None",
       "role": "Traveler",
@@ -12,6 +13,7 @@
     },
     {
       "name": "Venti",
+      "star": "5",
       "birthday": "June 16",
       "affiliation": "Mondstadt",
       "role": "Bard",
@@ -23,6 +25,7 @@
     },
     {
       "name": "Diluc",
+      "star": "5",
       "birthday": "April 30",
       "affiliation": "Dawn Winery",
       "role": "Diligence",
