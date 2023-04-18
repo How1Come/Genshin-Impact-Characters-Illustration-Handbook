@@ -11,6 +11,7 @@ import SearchBar from './components/SearchBar.js';
 import TravelerImage from './images/Traveler.jpg';
 import VentiImage from './images/Venti.jpg';
 import DilucImage from './images/Diluc.jpg';
+import AlbedoImage from './images/Albedo.jpg';
 // import other character images as needed
 
 function CharacterListScreen() {
@@ -58,6 +59,8 @@ function getImageForCharacter(character) {
       return VentiImage;
     case 'Diluc':
       return DilucImage;
+    case 'Albedo':
+      return AlbedoImage;
     // add other cases for other characters as needed
     default:
       return null;
@@ -74,8 +77,8 @@ const styles = StyleSheet.create({
     borderBottomColor: '#eee',
   },
   characterImage: {
-    width: 48,
-    height: 48,
+    width: 54,
+    height: 54,
     marginRight: 16,
   },
   characterName: {

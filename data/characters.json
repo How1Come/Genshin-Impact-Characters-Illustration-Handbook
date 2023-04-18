@@ -2,6 +2,7 @@
     {
       "name": "Traveler",
       "star": "5",
+      "realName": "Aether (Male)/Lumine (Female)",
       "birthday": "Unknown",
       "affiliation": "None",
       "weapon": "Sword",
@@ -39,7 +40,9 @@
       "affiliation": "Knights of Favonius",
       "weapon": "Sword",
       "constellation": "Princeps Cretaceus",
-      "title": "The Alchemist"
+      "title": "The Alchemist",
+      "region": "Mondstadt",
+      "element": "Geo"
     }
   ]
   
