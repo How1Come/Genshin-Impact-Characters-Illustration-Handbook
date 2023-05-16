@@ -5,6 +5,7 @@ import TravelerImage from '../images/Traveler.jpg';
 import VentiImage from '../images/Venti.jpg';
 import DilucImage from '../images/Diluc.jpg';
 import AlbedoImage from '../images/Albedo.jpg';
+import JeanImage from '../images/Jean.jpg';
 
 import NoneBackgroundImage from '../images/none_background.jpg';
 import MondstadtBackgroundImage from '../images/Mondstadt_background.jpg';
@@ -29,7 +30,7 @@ const CharacterDetailScreen = ({ route }) => {
         <Image source={image} style={styles.characterImage} />
         <Text style={styles.characterName}>{character.name}</Text>
         <Image source={StarImage} style={styles.StarImage} />
-        {character.name === 'Traveler' && (
+        {character.realName != '' && (
           <Text style={styles.infoText}>Real Name: {character.realName}</Text>
         )}
         <Text style={styles.infoText}>Birthday: {character.birthday}</Text>
@@ -55,6 +56,8 @@ function getImageForCharacter(character) {
       return DilucImage;
     case 'Albedo':
       return AlbedoImage;
+    case 'Jean':
+      return JeanImage;
     // add other cases for other characters as needed
     default:
       return null;

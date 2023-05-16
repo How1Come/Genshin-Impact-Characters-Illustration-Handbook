@@ -12,6 +12,7 @@ import TravelerImage from './images/Traveler.jpg';
 import VentiImage from './images/Venti.jpg';
 import DilucImage from './images/Diluc.jpg';
 import AlbedoImage from './images/Albedo.jpg';
+import JeanImage from './images/Jean.jpg';
 // import other character images as needed
 
 function CharacterListScreen() {
@@ -61,6 +62,8 @@ function getImageForCharacter(character) {
       return DilucImage;
     case 'Albedo':
       return AlbedoImage;
+    case 'Jean':
+      return JeanImage;
     // add other cases for other characters as needed
     default:
       return null;
