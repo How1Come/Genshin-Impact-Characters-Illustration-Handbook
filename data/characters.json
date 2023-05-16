@@ -14,7 +14,6 @@
     {
       "name": "Venti",
       "star": "5",
-      "realName": "Barbatos(God name)",
       "birthday": "June 16",
       "affiliation": "Mondstadt",
       "weapon": "Bow",
@@ -31,24 +30,26 @@
       "affiliation": "Dawn Winery",
       "weapon": "Claymore",
       "constellation": "Noctua",
-      "title": "Darknight Hero",
+      "title": "The Dark Side of Dawn",
       "region": "Mondstadt",
       "element": "Pyro"
     },
     {
       "name": "Albedo",
       "star": "5",
+      "realName": "",
       "birthday": "September 13",
       "affiliation": "Knights of Favonius",
       "weapon": "Sword",
       "constellation": "Princeps Cretaceus",
-      "title": "The Alchemist",
+      "title": "Kreideprinz",
       "region": "Mondstadt",
       "element": "Geo"
     },
     {
       "name": "Jean",
       "star": "5",
+      "realName": "Jean Gunnhildr",
       "birthday": "March 14",
       "affiliation": "Knights of Favonius",
       "weapon": "Sword",
@@ -60,6 +61,7 @@
     {
       "name": "Mona",
       "star": "5",
+      "realName": "",
       "birthday": "August 31",
       "affiliation": "Astrologists",
       "weapon": "Catalyst",
@@ -71,6 +73,7 @@
     {
       "name": "Sucrose",
       "star": "4",
+      "realName": "",
       "birthday": "November 26",
       "affiliation": "Alchemy",
       "weapon": "Catalyst",
@@ -82,6 +85,7 @@
     {
       "name": "Fischl",
       "star": "4",
+      "realName": "",
       "birthday": "May 27",
       "affiliation": "Prinzessin der Verurteilung!",
       "weapon": "Bow",
@@ -93,6 +97,7 @@
     {
       "name": "Barbara",
       "star": "4",
+      "realName": "",
       "birthday": "July 5",
       "affiliation": "Church of Favonius",
       "weapon": "Catalyst",
