@@ -37,7 +37,6 @@
     {
       "name": "Albedo",
       "star": "5",
-      "realName": "",
       "birthday": "September 13",
       "affiliation": "Knights of Favonius",
       "weapon": "Sword",
@@ -57,8 +56,8 @@
       "title": "Dandelion Knight",
       "region": "Mondstadt",
       "element": "Anemo"
-    },
-    {
+    }
+    /*{
       "name": "Mona",
       "star": "5",
       "realName": "",
@@ -138,6 +137,5 @@
       "title": "Thorny Benevolence",
       "region": "Mondstadt",
       "element": "Cryo"
-    }
+    }*/
   ]
-  

@@ -22,6 +22,7 @@ const CharacterDetailScreen = ({ route }) => {
   const backgroundImage = getBackgroundImageForRegion(character.region);
   const StarImage = getStarImageForCharacter(character.star);
   const elementImage = getElementImageForElement(character.element);
+  const hasRealName = character.hasOwnProperty('realName');
 
   return (
     <View style={styles.container}>
@@ -30,7 +31,7 @@ const CharacterDetailScreen = ({ route }) => {
         <Image source={image} style={styles.characterImage} />
         <Text style={styles.characterName}>{character.name}</Text>
         <Image source={StarImage} style={styles.StarImage} />
-        {character.name === 'Traveler' && (
+        {hasRealName && (
           <Text style={styles.infoText}>Real Name: {character.realName}</Text>
         )}
         <Text style={styles.infoText}>Birthday: {character.birthday}</Text>
