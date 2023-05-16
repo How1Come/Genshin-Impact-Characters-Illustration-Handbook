@@ -29,7 +29,7 @@ const CharacterDetailScreen = ({ route }) => {
         <Image source={image} style={styles.characterImage} />
         <Text style={styles.characterName}>{character.name}</Text>
         <Image source={StarImage} style={styles.StarImage} />
-        {character.name === 'Traveler' && (
+        {character.realName && (
           <Text style={styles.infoText}>Real Name: {character.realName}</Text>
         )}
         <Text style={styles.infoText}>Birthday: {character.birthday}</Text>
@@ -101,6 +101,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
+   
+
     justifyContent: 'center'
   },
   contentContainer: {
@@ -133,7 +135,7 @@ const styles = StyleSheet.create({
   },
   infoText: {
     marginBottom: 10,
-    fontSize: 20,
+    fontSize: 18,
   },
   backgroundImage: {
     position: 'absolute',

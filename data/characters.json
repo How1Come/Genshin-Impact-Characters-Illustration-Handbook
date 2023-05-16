@@ -14,6 +14,7 @@
     {
       "name": "Venti",
       "star": "5",
+      "realName": "Barbatos(God name)",
       "birthday": "June 16",
       "affiliation": "Mondstadt",
       "weapon": "Bow",
@@ -25,6 +26,7 @@
     {
       "name": "Diluc",
       "star": "5",
+      "realName": "Diluc Ragnvindr",
       "birthday": "April 30",
       "affiliation": "Dawn Winery",
       "weapon": "Claymore",
@@ -51,7 +53,7 @@
       "affiliation": "Knights of Favonius",
       "weapon": "Sword",
       "constellation": "Leo Minor",
-      "title": "Acting Grand Master",
+      "title": "Dandelion Knight",
       "region": "Mondstadt",
       "element": "Anemo"
     },
@@ -62,7 +64,7 @@
       "affiliation": "Astrologists",
       "weapon": "Catalyst",
       "constellation": "Astrolabe",
-      "title": "Enigmatic Astrologer",
+      "title": "Astral Reflection",
       "region": "Mondstadt",
       "element": "Hydro"
     },
@@ -98,6 +100,39 @@
       "title": "Shining Idol",
       "region": "Mondstadt",
       "element": "Hydro"
+    },
+    {
+      "name": "Kaeya",
+      "star": "4",
+      "birthday": "November 30",
+      "affiliation": "Knights of Favonius",
+      "weapon": "Sword",
+      "constellation": "Pavo Ocellus",
+      "title": "Frostwind Swordsman",
+      "region": "Mondstadt",
+      "element": "Cryo"
+    },
+    {
+      "name": "Lisa",
+      "star": "4",
+      "birthday": "June 9",
+      "affiliation": "Knights of Favonius",
+      "weapon": "Catalyst",
+      "constellation": "Tempus Fugit",
+      "title": "Witch of Purple Rose",
+      "region": "Mondstadt",
+      "element": "Electro"
+    },
+    {
+      "name": "Rosaria",
+      "star": "4",
+      "birthday": "January 24",
+      "affiliation": "Church of Favonius",
+      "weapon": "Polearm",
+      "constellation": "Spinea Corona",
+      "title": "Thorny Benevolence",
+      "region": "Mondstadt",
+      "element": "Cryo"
     }
   ]
   
