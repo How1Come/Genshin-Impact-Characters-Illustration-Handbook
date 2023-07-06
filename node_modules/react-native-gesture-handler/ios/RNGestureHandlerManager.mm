@@ -14,12 +14,12 @@
 #import "RNGestureHandlerState.h"
 #import "RNRootViewGestureRecognizer.h"
 
-#ifdef RCT_NEW_ARCH_ENABLED
+#ifdef RN_FABRIC_ENABLED
 #import <React/RCTSurfaceTouchHandler.h>
 #import <React/RCTViewComponentView.h>
 #else
 #import <React/RCTTouchHandler.h>
-#endif // RCT_NEW_ARCH_ENABLED
+#endif // RN_FABRIC_ENABLED
 
 #import "Handlers/RNFlingHandler.h"
 #import "Handlers/RNForceTouchHandler.h"
@@ -99,7 +99,7 @@
 {
   UIView *view = [_uiManager viewForReactTag:viewTag];
 
-#ifdef RCT_NEW_ARCH_ENABLED
+#ifdef RN_FABRIC_ENABLED
   if (view == nil) {
     // Happens when the view with given tag has been flattened.
     // We cannot attach gesture handler to a non-existent view.
@@ -117,7 +117,7 @@
 
   view.reactTag = viewTag; // necessary for RNReanimated eventHash (e.g. "42onGestureHandlerEvent"), also will be
                            // returned as event.target
-#endif // RCT_NEW_ARCH_ENABLED
+#endif // RN_FABRIC_ENABLED
 
   [_registry attachHandlerWithTag:handlerTag toView:view withActionType:actionType];
 
@@ -207,7 +207,7 @@
   if ([gestureRecognizer.view isKindOfClass:[UIScrollView class]])
     return;
 
-#ifdef RCT_NEW_ARCH_ENABLED
+#ifdef RN_FABRIC_ENABLED
   RCTSurfaceTouchHandler *touchHandler = [viewWithTouchHandler performSelector:@selector(touchHandler)];
 #else
   RCTTouchHandler *touchHandler = [viewWithTouchHandler performSelector:@selector(touchHandler)];
@@ -249,7 +249,7 @@
 - (void)sendEventForReanimated:(RNGestureHandlerStateChange *)event
 {
   // Delivers the event to Reanimated.
-#ifdef RCT_NEW_ARCH_ENABLED
+#ifdef RN_FABRIC_ENABLED
   // Send event directly to Reanimated
   if (_reanimatedModule == nil) {
     _reanimatedModule = [_uiManager.bridge moduleForName:@"ReanimatedModule"];
@@ -260,7 +260,7 @@
   // In the old architecture, Reanimated overwrites RCTEventDispatcher
   // with REAEventDispatcher and intercepts all direct events.
   [self sendEventForDirectEvent:event];
-#endif // RCT_NEW_ARCH_ENABLED
+#endif // RN_FABRIC_ENABLED
 }
 
 - (void)sendEventForNativeAnimatedEvent:(RNGestureHandlerStateChange *)event
@@ -275,11 +275,11 @@
 - (void)sendEventForJSFunctionOldAPI:(RNGestureHandlerStateChange *)event
 {
   // Delivers the event to JS (old RNGH API).
-#ifdef RCT_NEW_ARCH_ENABLED
+#ifdef RN_FABRIC_ENABLED
   [self sendEventForDeviceEvent:event];
 #else
   [self sendEventForDirectEvent:event];
-#endif // RCT_NEW_ARCH_ENABLED
+#endif // RN_FABRIC_ENABLED
 }
 
 - (void)sendEventForJSFunctionNewAPI:(RNGestureHandlerStateChange *)event
