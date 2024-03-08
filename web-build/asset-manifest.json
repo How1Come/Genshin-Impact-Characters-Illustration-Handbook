@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.js": "/static/js/main.0020eb79.js",
+    "static/js/824.5a1407a2.js": "/static/js/824.5a1407a2.js",
+    "static/media/Venti.jpg": "/static/media/Venti.4e8131a7a15d029ebb9a.jpg",
+    "static/media/Mondstadt_background.jpg": "/static/media/Mondstadt_background.276a465d97c14a1a3eb9.jpg",
+    "static/media/none_background.jpg": "/static/media/none_background.35d34c47ff8471c5cf98.jpg",
+    "static/media/Diluc.jpg": "/static/media/Diluc.8c056451ec2cf3752037.jpg",
+    "static/media/Traveler.jpg": "/static/media/Traveler.1ddfb2dc712b4887db61.jpg",
+    "static/media/Anemo.jpg": "/static/media/Anemo.a597e38c70d624e946f4.jpg",
+    "favicon.ico": "/favicon.ico",
+    "static/media/Pyro.jpg": "/static/media/Pyro.ae54c85afc85e0d46d9f.jpg",
+    "index.html": "/index.html",
+    "favicon-32.png": "/favicon-32.png",
+    "static/media/5_stars.png": "/static/media/5_stars.40e604f6e822c0626f68.png",
+    "favicon-16.png": "/favicon-16.png",
+    "serve.json": "/serve.json",
+    "manifest.json": "/manifest.json",
+    "main.0020eb79.js.map": "/static/js/main.0020eb79.js.map",
+    "824.5a1407a2.js.map": "/static/js/824.5a1407a2.js.map"
+  },
+  "entrypoints": [
+    "static/js/824.5a1407a2.js",
+    "static/js/main.0020eb79.js"
+  ]
+}
