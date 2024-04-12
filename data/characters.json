@@ -1,39 +1,60 @@
 [
-    {
-      "name": "Traveler",
-      "star": "5",
-      "birthday": "Unknown",
-      "affiliation": "None",
-      "role": "Traveler",
-      "weapon": "Sword",
-      "constellation": "Viator",
-      "title": "The Outlander",
-      "region": "None",
-      "element": "None"
-    },
-    {
-      "name": "Venti",
-      "star": "5",
-      "birthday": "June 16",
-      "affiliation": "Mondstadt",
-      "role": "Bard",
-      "weapon": "Bow",
-      "constellation": "Carmen Dei",
-      "title": "Windborne Bard",
-      "region": "Mondstadt",
-      "element": "Anemo"
-    },
-    {
-      "name": "Diluc",
-      "star": "5",
-      "birthday": "April 30",
-      "affiliation": "Dawn Winery",
-      "role": "Diligence",
-      "weapon": "Claymore",
-      "constellation": "Noctua",
-      "title": "Darknight Hero",
-      "region": "Mondstadt",
-      "element": "Pyro"
-    }
-  ]
-  
+  {
+    "name": "Traveler",
+    "star": "5",
+    "realName": "Aether (Male)/Lumine (Female)",
+    "birthday": "Unknown",
+    "affiliation": "None",
+    "weapon": "Sword",
+    "constellation": "Viator (Male)/Viatrix (Female)",
+    "title": "Outlander",
+    "region": "None",
+    "element": "None"
+  },
+  {
+    "name": "Venti",
+    "star": "5",
+    "birthday": "June 16",
+    "affiliation": "Mondstadt",
+    "weapon": "Bow",
+    "constellation": "Carmen Dei",
+    "title": "Windborne Bard",
+    "region": "Mondstadt",
+    "element": "Anemo"
+  },
+  {
+    "name": "Diluc",
+    "star": "5",
+    "realName": "Diluc Ragnvindr",
+    "birthday": "April 30",
+    "affiliation": "Dawn Winery",
+    "weapon": "Claymore",
+    "constellation": "Noctua",
+    "title": "The Dark Side of Dawn",
+    "region": "Mondstadt",
+    "element": "Pyro"
+  },
+  {
+    "name": "Albedo",
+    "star": "5",
+    "birthday": "September 13",
+    "affiliation": "Knights of Favonius",
+    "weapon": "Sword",
+    "constellation": "Princeps Cretaceus",
+    "title": "Kreideprinz",
+    "region": "Mondstadt",
+    "element": "Geo"
+  },
+  {
+    "name": "Jean",
+    "star": "5",
+    "realName": "Jean Gunnhildr",
+    "birthday": "March 14",
+    "affiliation": "Knights of Favonius",
+    "weapon": "Sword",
+    "constellation": "Leo Minor",
+    "title": "Dandelion Knight",
+    "region": "Mondstadt",
+    "element": "Anemo"
+  }
+]
